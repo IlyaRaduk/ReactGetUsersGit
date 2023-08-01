@@ -4,7 +4,7 @@ const MySelect = (props)=>{
     return(
         <select className="selected"
         value={props.value}
-        onChange={event=>props.sortPosts(event.target.value)}
+        onChange={event=>props.setSelectedSort(event.target.value)}
         >
             <option disabled={true} value=''>{props.defaultvalue}</option>
             {props.options.map((option,index)=><option key={index} 
